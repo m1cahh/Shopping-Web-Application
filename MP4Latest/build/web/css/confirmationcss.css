@@ -1,0 +1,166 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 12 4, 22, 1:48:21 PM
+    Author     : Yanah
+*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+    
+body, html{
+    overflow: auto;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+body {
+    overflow: auto;
+    background-image: url(https://i.postimg.cc/FHrwcFGJ/MP4-Website-Draft.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+h1{
+    color: #023047;
+    font-family: Tahoma, Verdana, sans-serif;
+    font-size: 45px;
+}
+
+h2{
+    font-family: Tahoma, Verdana, sans-serif;
+    font-size: 24px;
+    padding-left: 2.5%;
+    padding-top: 2.5%;
+}
+
+h3{
+    font-family: Tahoma, Verdana, sans-serif;
+    font-size: 20px;
+    padding-left: 2.5%;
+    padding-top: 2.5%;
+}
+
+p{
+    font-family: Tahoma, Verdana, sans-serif;
+    font-size: 16px;
+    padding-left: 2.5%;
+}
+
+.header{
+    padding-left: 5%;
+}
+
+.cart-total{
+    text-align: right;
+    display: inline-block;
+    float: right;
+    margin-top: 10%;
+}
+
+.footer{
+    padding-top: 10%;
+}
+
+#container{
+    overflow: auto;
+    max-height: 50%;
+}
+
+#order-summary{
+    margin-top: 5%;
+    background-color: #8ecae6;
+    width: 40%;
+    height: 70%;
+    margin-left: 25%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding:5%;
+}
+
+#order, #back{
+    font-family: Tahoma, Verdana, sans-serif; 
+    font-weight: bold;
+    border: none;
+    display: block;
+    width: 250px;
+    height: 3em;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-top: 5%;
+    box-shadow: -4px 4px 8px -4px rgba(0, 0, 0, 0.2), -4px 6px 20px -4px rgba(0, 0, 0, 0.19);
+}
+
+#order{
+    background-color: #ffbd59;
+    float: right;
+}
+
+#back{
+    background-color: #f2f2f2;
+    float: left;
+}
+
+#user-controls{
+    margin-top: 20%;
+    margin-bottom: 10%;
+}
+
+#order:hover, #back:hover{
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    body{
+        background-repeat: repeat;
+    }
+    
+    h1{
+        font-size: 25px;
+    }
+    
+    h2{
+        font-size: 18px;
+        padding-left: 2.5%;
+        padding-top: 2.5%;
+    }
+    
+    h3{
+        font-size: 14px;
+        padding-left: 2.5%;
+        padding-top: 2.5%;
+    }
+    
+    p{
+        font-size: 12px;
+        padding-left: 2.5%;
+    }
+    
+    img{
+        margin-top: 5%;
+        max-width: 20%;
+        max-height: 20%;
+    }
+    
+    #order-summary{
+        margin-left: 15%;
+        width: 62%;
+        min-height: 60%;   
+    } 
+    
+    #order, #back{
+        width: 150px;
+        float: none;
+        margin: auto;
+        margin-top: 5%;
+    }
+    
+    #user-controls{
+        display: block;
+        margin-top: 27%;
+    }
+}

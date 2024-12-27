@@ -1,0 +1,136 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 11 27, 22, 10:20:53 PM
+    Author     : arian
+*/
+
+html, body { 
+    min-height: 100%; 
+}
+
+body {
+    overflow: hidden;
+    background-image: url(https://i.postimg.cc/FHrwcFGJ/MP4-Website-Draft.png);
+    background-repeat: repeat;
+    background-size: 100%;
+    font-family: Tahoma, Verdana, sans-serif; 
+}
+
+.outer {
+    background-color: #8ecae6;
+    height: 385px;
+    width: 360px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.return
+{
+    float: left;
+    font-family: Tahoma, Verdana, sans-serif; 
+    border: none;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #8ecae6;
+    font-size: 10px;
+    font-weight: bolder;
+    color: #023047; 
+    margin-top: 20px;
+    margin-left: 6.5px;
+}
+
+img
+{
+    width:23%;
+    height:20%;
+    margin-top: 20px;
+    margin-left: 85px;
+}
+h1
+{
+  font-size: 160%;
+  color: #023047;    
+  margin-top: auto;
+  margin-bottom:20px;
+  margin-left: 10px;
+}
+
+.input-group
+{
+  text-align: left;
+}
+
+.input {
+    background-color: #ffffff;    
+    border: none;
+    border-radius: 10px;
+    display: block; 
+    font-size: small;    
+    margin: 1em auto;
+    padding: 13px;
+    text-align: left;
+    width: 65%;
+}
+
+.label {
+    color: #023047;
+    font-size: 13px;
+    font-weight: bold;
+    margin-left: 70px;
+}
+
+input[type="submit"] {
+    font-family: Tahoma, Verdana, sans-serif; 
+    font-weight: bold;
+    border: none;
+    display: block;
+    width: 23%;
+    margin: 1em auto;
+    height: 1.8em;
+    border-radius: 23px;
+    font-size: 12px;
+    background-color: #ffbd59;
+}
+
+input[type="button"]:hover, input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+input[type="text"]:hover, input[type="password"]:hover{
+    cursor: text;
+}
+
+@media only screen and (max-width: 768px) {
+    body{
+        width: 100%;
+        background-repeat: repeat;  
+    }
+    .outer{
+        height: 345px;
+        width: 260px;
+    }
+    img{
+        margin-left: 18%;
+    }
+    h1{
+        font-size: 120%;
+        color: #023047;    
+        margin-top: auto;
+        margin-bottom:15px;
+        margin-left: 5px;
+    }
+    .label{
+        font-size: 10px;
+    }
+}
+
+
+
+

@@ -1,0 +1,423 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 11 28, 22, 11:11:11 PM
+    Author     : Yanah
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+    
+body, html{
+    overflow: auto;
+    background-color: #f2f2f2;
+    overflow-x: hidden;
+}
+
+button {
+  padding: 0.3em 1em;
+  font-size: 12px;
+  letter-spacing: 0.3em;
+  font-weight: bold;
+  color: #000;
+  background-color:  #ffbd59;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color:  #ffbd59;
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+button:active {
+  transform: translateY(-1px);
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+.header{
+    height: 130px;
+    width: 100%;
+    padding-top: 10px;
+    padding-left: 40px;       
+    background-color: #023047;
+    border-bottom: 2px solid #fb8500;
+}
+
+.socials{
+    max-width: 200px;
+    max-height: 80px;
+    padding-top: 20px;
+}
+
+.rectangle {
+    width: 15.5%;
+    margin: 1% -4% 1% 7%;
+    height: 290px;
+    box-shadow: -4px 4px 8px -4px rgba(0, 0, 0, 0.2), -4px 6px 20px -4px rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    background-color: white;
+}
+
+.rectangle > h1{
+    text-align: left;
+    font-family: Trebuchet MS, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    padding-left: 15px;
+    padding-top: 20px;
+}
+
+.rectangle > p{
+    text-align: left;
+    font-family: Trebuchet MS, Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: black;
+    padding-left: 15px;
+}
+
+.container{
+    display: flex;
+    margin-left: 13%;
+}
+
+#user-controls{
+    display: none;
+}
+
+#logout, #login, #cart{
+    font-family: Tahoma, Verdana, sans-serif; 
+    font-weight: bold;
+    border: none;
+    width: 250px;
+    height: 3em;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-top: 5%;
+    box-shadow: -4px 4px 8px -4px rgba(0, 0, 0, 0.2), -4px 6px 20px -4px rgba(0, 0, 0, 0.19);
+    display: none;
+    background-color: #033047;
+    color: #ffbd59;
+}
+
+@media only screen and (max-width: 798px) {
+    .btn-container{
+        display: none;
+    }
+    
+    #logout, #login, #cart{
+        width: 150px;
+        float: none;
+        margin: auto;
+        margin-top: 5%;
+        display: block;
+    }
+    
+    #user-controls{
+        display: block;
+        margin-top: 27%;
+        padding-left: 5%;
+    }
+    
+    .container {
+        display: block;
+        column-count: 2;
+        margin-left: 0px;
+        margin-right: 25px;
+    }
+    
+    .rectangle {
+        width: 100%;
+        height: 110%;
+    }
+    .footer {
+        display: none;
+    }
+    
+}
+
+@media (max-width: 535px) {
+    .container {
+        display: block;
+        column-count: 2;
+        margin-left: 0px;
+        margin-right: 25px;
+    }
+    .rectangle {
+        width: 100%;
+    }
+    .footer {
+        display: none;
+    }
+}
+
+@media (max-width: 292px) {
+    .container {
+        display: block;
+        column-count: 1;
+        margin-left: 0px;
+        margin-right: 25px;
+    }
+    .rectangle {
+        width: 100%;
+    }
+    .footer {
+        display: none;
+    }
+}
+
+@media (min-width: 310px) {
+    #cart-btn {
+    float: right;
+    padding-right: 120px;
+    padding-top: 40px; 
+    }
+    
+    #login-btn {
+    float: right;
+    padding-top: 40px;
+    padding-right: 100px;
+    }
+    
+    #logout-btn {
+    float: right;
+    padding-right: 120px;
+    padding-top: 40px;
+    }
+}
+
+.footer{
+    height: 120px;
+    width: 100%;
+    background-color: #fb8500;
+    margin-top: 5%;
+}
+
+#container1{
+    padding-top: 5%;
+    margin-bottom: 35px;
+    margin-top: 35px;
+}
+
+#cart-btn{
+   color: #ffbd59;
+    font-family: Tahoma, Verdana, sans-serif;
+    font-weight: 870;
+    font-size: 20px;
+    background-color: #023047;
+}
+
+#login-btn{
+    color: #ffbd59;
+    font-family: Tahoma, Verdana, sans-serif;
+    font-weight: 870;
+    font-size: 20px;
+    background-color: #023047;
+}
+
+#logout-btn{
+    color: #ffbd59;
+    font-family: Tahoma, Verdana, sans-serif;
+    font-weight: 870;
+    font-size: 20px;
+    background-color: #023047;
+}
+
+#logo-img{
+    float: left;
+}
+
+#archer-img{
+    background: url(https://i.postimg.cc/W43KG9Jx/Funko-Archer1.png);
+    max-width: 100%;
+    height: 150px;
+    background-size: 77%;
+    background-repeat: no-repeat;
+    margin-top: 15px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+#archer-img:hover{
+    background-image: url(https://i.postimg.cc/85T7X6T8/Funko-Archer2.png);
+    max-width: 100%;
+    height: 150px;
+    background-size: 77%;
+    background-repeat: no-repeat;
+    margin-top: 15px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+#eagles-img{
+    background: url(https://i.postimg.cc/wjZJ2Vf7/Funko-Eagles1.png);
+    max-width: 100%;
+    height: 150px;
+    background-size: 77%;
+    background-repeat: no-repeat;
+    margin-top: 15px;
+    margin-left: 40px;
+}
+
+#eagles-img:hover{
+    background-image: url(https://i.postimg.cc/MGJHXr3b/Funko-Eagles2.png);
+    max-width: 100%;
+    height: 150px;
+    background-size: 77%;
+    background-repeat: no-repeat;
+    margin-top: 15px;
+    margin-left: 45px;
+    cursor: pointer;
+    
+}
+
+#ironman-img{
+    background: url(https://i.postimg.cc/X730G6nv/Funko-Ironman1.png);
+    max-width: 100%;
+    height: 150px;
+    background-size: 77%;
+    background-repeat: no-repeat;
+    margin-top: 15px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+#ironman-img:hover{
+    background-image: url(https://i.postimg.cc/xT9WjGPJ/Funko-Ironman2.png);
+    max-width: 100%;
+    height: 150px;
+    background-size: 77%;
+    background-repeat: no-repeat;
+    margin-top: 15px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+#mcdo-img{
+    background: url(https://i.postimg.cc/xTbbCHTQ/Funko-Mc-Do1.png);
+    max-width: 100%;
+    height: 150px;
+    background-size: 77%;
+    background-repeat: no-repeat;
+    margin-top: 15px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+#mcdo-img:hover{
+    background-image: url(https://i.postimg.cc/zDykCyXt/Funko-Mc-Do2.png);
+    max-width: 100%;
+    height: 150px;
+    background-size: 77%;
+    background-repeat: no-repeat;
+    margin-top: 15px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+#noodles-img{
+    background: url(https://i.postimg.cc/SKZ1YvB4/Funko-Noodles1.png);
+    max-width: 100%;
+    height: 150px;
+    background-size: 77%;
+    background-repeat: no-repeat;
+    margin-top: 15px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+#noodles-img:hover{
+    background-image: url(https://i.postimg.cc/K8jcjh5M/Funko-Noodles2.png);
+    max-width: 100%;
+    height: 150px;
+    background-size: 77%;
+    background-repeat: no-repeat;
+    margin-top: 15px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+#trese-img{
+    background: url(https://i.postimg.cc/k5MHq7N0/Funko-Trese1.png);
+    max-width: 100%;
+    height: 150px;
+    background-size: 77%;
+    background-repeat: no-repeat;
+    margin-top: 15px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+#trese-img:hover{
+    background-image: url(https://i.postimg.cc/9Qbxxv3J/Funko-Trese2.png);
+    max-width: 100%;
+    height: 150px;
+    background-size: 77%;
+    background-repeat: no-repeat;
+    margin-top: 15px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+#queen-img{
+    background: url(https://i.postimg.cc/rFKRZHhj/Funko-Queen.png);
+    max-width: 100%;
+    height: 150px;
+    background-size: 77%;
+    background-repeat: no-repeat;
+    margin-top: 15px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+#queen-img:hover{
+    background-image: url(https://i.postimg.cc/FKQfRHhC/Funko-Queen-1.png);
+    max-width: 100%;
+    height: 150px;
+    background-size: 77%;
+    background-repeat: no-repeat;
+    margin-top: 15px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+#batman-img{
+    background: url(https://i.postimg.cc/bvCsRHQW/Funko-Batman.png);
+    max-width: 100%;
+    height: 150px;
+    background-size: 77%;
+    background-repeat: no-repeat;
+    margin-top: 15px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+#batman-img:hover{
+    background-image: url(https://i.postimg.cc/vBCTJY2v/Funko-Batman-1.png);
+    max-width: 100%;
+    height: 150px;
+    background-size: 77%;
+    background-repeat: no-repeat;
+    margin-top: 15px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+#login-btn:hover, #logout-btn:hover, #cart-btn:hover{
+    text-decoration: underline;
+}

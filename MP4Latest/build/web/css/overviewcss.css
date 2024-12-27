@@ -1,0 +1,100 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : Nov 28, 2022, 7:24:59 PM
+    Author     : Josephine Chen
+*/
+
+.leftPart{
+    background-color: #023047;
+    width: 30%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow: hidden;
+    padding-top: 20px;
+    left:0;
+}
+
+.rightPart{
+    background-color: #8ecae6;
+    width: 70%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow: hidden;
+    padding-top: 20px;
+    right:0;
+}
+
+.imagePart{
+    width: 85%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin:0 20px;
+}
+
+.images{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+img{
+    height: 300px;
+    width: 250px;
+    margin: 35px;
+    border-radius: 23px;
+    border: 2px solid #fb8500;
+}
+
+.buttonPart{
+    background-color: #023047;
+    width: 50%;
+    position: absolute;
+    top: 60%;
+    left: 10%;
+}
+
+.button{
+    font-family: Tahoma, Verdana, sans-serif; 
+    font-weight: bold;
+    border: none;
+    width: 60%;
+    margin-bottom: 20px;
+    height: 4em;
+    border-radius: 23px;
+    font-size: 12px;
+    left: 10%;
+}
+
+h1{
+    font-family: Tahoma, Verdana, sans-serif;
+    color: #fb8500;
+    font-weight: bold;
+    position: absolute;
+    font-size: 50px;
+    top:25%;
+    left: 10%;
+}
+
+.guest{
+    background-color: #8ecae6;
+    color: #023047;
+}
+
+.login{
+    background-color: #219ebc;
+    color: white;
+    
+}
+.button:hover{
+    cursor: pointer;
+}
+
+
